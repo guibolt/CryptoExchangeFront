@@ -54,7 +54,7 @@
      <v-card
     class="mx-2 my-2"
     width="210"
-      elevation="24"
+    elevation="24"
    
     outlined
     v-for="exchange in exchangeLst"
@@ -108,7 +108,7 @@ import {mapState,mapActions} from 'vuex'
       this.exchangeLst = this.exchangeobj.exchanges
   
       },
-      getAssetTitle(symbol){
+      getAssetTitle(symbol) {
         let coin = this.coinsLst.find(x => x.symbol == symbol)
         return coin.name 
       }
